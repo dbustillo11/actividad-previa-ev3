@@ -1,0 +1,30 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.navbar-brand {
+    margin-left: 1rem; /* Ajusta este valor según tus necesidades */
+}
+
+
+
+body::before {
+    content: '';
+    position: fixed; /* Fixed para que la imagen de fondo no se desplace con el contenido */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://jovenesaprogramar.edu.uy/themes/theme-ceibal/assets/img/comp-home-ref-2022-2.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Pone la imagen de fondo detrás del contenido */
+}
+
+@media (max-width: 768px) {
+    body::before {
+        -webkit-filter: blur(5px); /* Para Safari */
+        filter: blur(5px);
+    }
+}
