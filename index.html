@@ -26,34 +26,33 @@
                     <div class="card">
                         <div class="card-body">
                             <h2 class="card-title text-center">Registro para JaP2024</h2>
-                            <form>
+                            <form action="http://localhost:3000/loginconf" method="post">
+
                                 <div class="form-group">
                                     <label for="nombre">Nombre</label>
-                                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                                    <input type="text" class="form-control" id="nombre"  name="nombre" placeholder="Ingresa tu nombre">
                                 </div>
                                 <div class="form-group">
                                     <label for="apellido">Apellido</label>
-                                    <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
+                                    <input type="text" class="form-control" id="apellido" name="apellido"  placeholder="Ingresa tu apellido">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Correo Electrónico</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo electrónico">
                                 </div>
                                 <div class="form-group">
                                     <label for="pais">País</label>
-                                    <select class="form-control" id="pais">
-                                        <!-- Opciones de países aquí -->
-                                    </select>
+                                    <input type="text" class="form-control" id="pais" name="pais" placeholder="Ingresa tu país">
                                 </div>
                                 <div class="form-group">
                                     <label for="ocupacion">Ocupación</label>
-                                    <input type="text" class="form-control" id="ocupacion" placeholder="Ingresa tu ocupación">
+                                    <input type="text" class="form-control" id="ocupacion" name="ocupacion" placeholder="Ingresa tu ocupación">
                                 </div>
                                 <div class="form-group mt-3">
                                     <label for="interes">¿Por qué te interesa esta conferencia?</label>
-                                    <textarea class="form-control" id="interes" rows="3"></textarea>
+                                    <textarea class="form-control" id="interes" name="interes" rows="3"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                                <button type="submit" class="btn btn-primary mt-3" id="enviar">Enviar</button>
                             </form>
                         </div>
                     </div>
@@ -64,6 +63,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="/app.js"></script>
+        <script src="/index.js"></script>
     </body>
         </html>
         
